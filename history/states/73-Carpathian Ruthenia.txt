@@ -1,0 +1,31 @@
+state={
+	id=73
+	name="STATE_73"
+	manpower = 854300
+	
+	state_category = rural
+	
+	history={
+		victory_points = {
+			3548 1 
+		}
+		owner = ROM
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = ROM
+		add_claim_by = ROM
+
+		1939.3.14 = {
+			owner = ROM
+			controller = ROM
+			remove_claim_by = ROM
+			add_core_of = ROM
+			add_core_of = ROM
+		}
+	}
+
+	provinces={
+		3548 6571 9563 11536 11691 
+	}
+}
