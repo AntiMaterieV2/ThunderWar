@@ -1,0 +1,1764 @@
+focus_tree = {
+	id = 1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ROM
+		}
+	}
+	#Focus for Guarante Independence to Grece!
+	focus = {
+		id = ROM_guarante_independence_to_grece
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 42
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_guarante_independence_to_bulgaria }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Prepare for the Next War!
+	focus = {
+		id = ROM_prepare_for_the_next_war
+		icon = GFX_goal_generic_national_unity
+		x = 26
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_ban_the_elections }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Execute the Finale Solution in Romania!
+	focus = {
+		id = ROM_execute_the_finale_solution_in_romania
+		icon = GFX_ROM_execute_the_finale_solution_in_romania-28236
+		x = 33
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_evacuate_all_hungarians_from_romania }
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A new Romania!
+	focus = {
+		id = ROM_a_new_romania
+		icon = GFX_focus_rom_preserve_romania
+		x = 34
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ROM_execute_the_finale_solution_in_romania 
+		}
+		prerequisite = { 
+			focus = ROM_give_a_trial_to_antonescu 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Long Live the Ruler!
+	focus = {
+		id = ROM_long_live_the_ruler
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 32
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ROM_rebirth_of_great_romania 
+			focus = ROM_a_new_romania 
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Give a Trial to Antonescu!
+	focus = {
+		id = ROM_give_a_trial_to_antonescu
+		icon = GFX_goal_generic_military_deal
+		x = 35
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_capture_ion_antonescu }
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industrial Reboot
+	focus = {
+		id = ROM_industrial_reboot
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_seize_the_lands }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Beggin the Agrarian Reform
+	focus = {
+		id = ROM_beggin_the_agrarian_reform
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_seize_the_lands }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Prepare the Industrialization
+	focus = {
+		id = ROM_prepare_the_industrialization
+		icon = GFX_focus_generic_industry_3
+		x = 22
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_ban_the_extremist_parties }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A great Romania!
+	focus = {
+		id = ROM_a_great_romania
+		icon = GFX_focus_invite_romania
+		x = 24
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ROM_prepare_the_industrialization 
+			focus = ROM_prepare_for_the_next_war 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ban the Elections!
+	focus = {
+		id = ROM_ban_the_elections
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 26
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ROM_carol_ii 
+			focus = ROM_mihai_i 
+		}
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Evacuate all Hungarians from Romania!
+	focus = {
+		id = ROM_evacuate_all_hungarians_from_romania
+		icon = GFX_goal_generic_demand_territory
+		x = 33
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_zelea_codreanu }
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Capture Ion Antonescu!
+	focus = {
+		id = ROM_capture_ion_antonescu
+		icon = GFX_ROM_capture_ion_antonescu-50812
+		x = 35
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_zelea_codreanu }
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rebirth of Great Romania
+	focus = {
+		id = ROM_rebirth_of_great_romania
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 30
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ROM_inprison_codreanu 
+		}
+		prerequisite = { 
+			focus = ROM_army_restructuring 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Army Restructuring
+	focus = {
+		id = ROM_army_restructuring
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = 31
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_beggin_the_rearm_plan }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Seize the Power
+	focus = {
+		id = ROM_seize_the_power
+		icon = GFX_goal_generic_political_pressure
+		x = 29
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_fieldmarshal_ion_antonescu }
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Beggin the rearm plan
+	focus = {
+		id = ROM_beggin_the_rearm_plan
+		icon = GFX_focus_chi_army_reform
+		x = 31
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_fieldmarshal_ion_antonescu }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Seize the Lands!
+	focus = {
+		id = ROM_seize_the_lands
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_ban_the_opposition }
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ban the Church!
+	focus = {
+		id = ROM_ban_the_church
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 18
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_ban_the_opposition }
+		search_filters = { FOCUS_FILTER_MEX_CHURCH_AUTHORITY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ban the Opposition!
+	focus = {
+		id = ROM_ban_the_opposition
+		icon = GFX_goal_generic_war_with_comintern
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_communism_way }
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Put the King as a Figure Head
+	focus = {
+		id = ROM_put_the_king_as_a_figure_head
+		icon = GFX_focus_rom_handle_king
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_hold_the_elections }
+		mutually_exclusive = { focus = ROM_put_the_king_as_leader_of_the_country }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Put the King as Leader of the Country
+	focus = {
+		id = ROM_put_the_king_as_leader_of_the_country
+		icon = GFX_focus_eng_god_save_the_king
+		x = 23
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_hold_the_elections }
+		mutually_exclusive = { focus = ROM_put_the_king_as_a_figure_head }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mihai I
+	focus = {
+		id = ROM_mihai_i
+		icon = GFX_focus_rom_coup
+		x = 27
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_empower_the_king }
+		mutually_exclusive = { focus = ROM_carol_ii }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for One Empire!
+	focus = {
+		id = ROM_one_empire
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 47
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ROM_serbian_question 
+		}
+		prerequisite = { 
+			focus = ROM_ultimatum_to_czechoslovakia 
+		}
+		prerequisite = { 
+			focus = ROM_greece_ultimatum 
+		}
+		prerequisite = { 
+			focus = ROM_albania_ultimatum 
+		}
+		prerequisite = { 
+			focus = ROM_ottoman_revange 
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Albania Ultimatum!
+	focus = {
+		id = ROM_albania_ultimatum
+		icon = GFX_goal_generic_dangerous_deal
+		x = 50
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_ultimatum_to_bulgaria }
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Greece Ultimatum!
+	focus = {
+		id = ROM_greece_ultimatum
+		icon = GFX_goal_generic_territory_or_war
+		x = 48
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_ultimatum_to_bulgaria }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Serbian Question
+	focus = {
+		id = ROM_serbian_question
+		icon = GFX_focus_YUG_banovina_of_croatia
+		x = 44
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_demand_hungary }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fighter Focus II
+	focus = {
+		id = ROM_fighter_focus_ii
+		icon = GFX_goal_generic_air_fighter2
+		x = 11
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_fighter_focus }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strategic Bombers Effort
+	focus = {
+		id = ROM_strategic_bombers_effort
+		icon = GFX_goal_generic_air_bomber
+		x = 13
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_bomber_designs }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Heavy Fighter Effort
+	focus = {
+		id = ROM_heavy_fighter_effort
+		icon = GFX_focus_usa_escort_fighters
+		x = 10
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_fighter_focus }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bomber Designs
+	focus = {
+		id = ROM_bomber_designs
+		icon = GFX_goal_generic_air_bomber
+		x = 13
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_iar_effort }
+		mutually_exclusive = { focus = ROM_fighter_focus }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fighter Focus
+	focus = {
+		id = ROM_fighter_focus
+		icon = GFX_goal_generic_air_fighter2
+		x = 11
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_iar_effort }
+		mutually_exclusive = { focus = ROM_bomber_designs }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tanks!
+	focus = {
+		id = ROM_tanks
+		icon = GFX_goal_generic_army_tanks
+		x = 27
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ROM_mecanized_effort 
+			focus = ROM_new_artilery_effort 
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Inproved Tactics!
+	focus = {
+		id = ROM_inproved_tactics
+		icon = GFX_goal_generic_army_doctrines
+		x = 28
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_mobil_tactics_inprovement }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ban the Extremist Parties!
+	focus = {
+		id = ROM_ban_the_extremist_parties
+		icon = GFX_focus_eng_special_air_service
+		x = 22
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ROM_put_the_king_as_a_figure_head 
+			focus = ROM_put_the_king_as_leader_of_the_country 
+		}
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rubber industry
+	focus = {
+		id = ROM_rubber_industry
+		icon = GFX_focus_generic_rubber
+		x = 49
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_rafinery_industry }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Heavy Industry Phase 3
+	focus = {
+		id = ROM_heavy_industry_phase_3
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 47
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_heavy_industry_phase_1 }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rafinery Industry
+	focus = {
+		id = ROM_rafinery_industry
+		icon = GFX_goal_generic_oil_refinery
+		x = 48
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_heavy_industry }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Heavy Industry Phase 2
+	focus = {
+		id = ROM_heavy_industry_phase_2
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 45
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_heavy_industry_phase_1 }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Military Factory Phase 2
+	focus = {
+		id = ROM_military_factory_phase_2
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 37
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_military_factory_phase_1 }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Military Factory Phase 3
+	focus = {
+		id = ROM_military_factory_phase_3
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 39
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_military_factory_phase_1 }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Infrastructure Plan Phase 1
+	focus = {
+		id = ROM_infrastructure_plan_phase_1
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 42
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_infrastructure_effort }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industrial Research Plan 2
+	focus = {
+		id = ROM_industrial_research_plan_2
+		icon = GFX_goal_generic_scientific_exchange
+		x = 41
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_industrial_research_plan_1 }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Military Factory Phase 1
+	focus = {
+		id = ROM_military_factory_phase_1
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 38
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_armament_industy }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mecanized Effort
+	focus = {
+		id = ROM_mecanized_effort
+		icon = GFX_goal_continuous_reduce_training_time
+		x = 26
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_mobil_tactics_inprovement }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industrial Reborn
+	focus = {
+		id = ROM_industrial_reborn
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 43
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Heavy Industry Phase 1
+	focus = {
+		id = ROM_heavy_industry_phase_1
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 46
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_heavy_industry }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Heavy Industry
+	focus = {
+		id = ROM_the_heavy_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 47
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_industrial_reborn }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for New Artilery Effort
+	focus = {
+		id = ROM_new_artilery_effort
+		icon = GFX_goal_generic_army_artillery2
+		x = 28
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_inprove_the_land_tactics }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for New Weapons!
+	focus = {
+		id = ROM_new_weapons
+		icon = GFX_goal_generic_army_artillery2
+		x = 25
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_inprove_the_land_tactics }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Inpouse Demilitarized Zone in Soviet Union!
+	focus = {
+		id = ROM_inpouse_demilitarized_zone_in_soviet_union
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_final_day_of_little_entante }
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Victorious in Great Soviet Offensive!
+	focus = {
+		id = ROM_victorious_in_great_soviet_offensive
+		icon = GFX_focus_rom_preserve_romania
+		x = 7
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Final Day of Little Entante
+	focus = {
+		id = ROM_the_final_day_of_little_entante
+		icon = GFX_goal_tripartite_pact
+		x = 4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_victorious_in_great_soviet_offensive }
+		mutually_exclusive = { focus = ROM_preserve_little_entante }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Preserve Little Entante!
+	focus = {
+		id = ROM_preserve_little_entante
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 10
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_victorious_in_great_soviet_offensive }
+		mutually_exclusive = { focus = ROM_the_final_day_of_little_entante }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sign the Pact with Poland
+	focus = {
+		id = ROM_sign_the_pact_with_poland
+		icon = GFX_focus_generic_polish_deal
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_final_day_of_little_entante }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Force Soviet Union To Pay War Reparations
+	focus = {
+		id = ROM_force_soviet_union_to_pay_war_reparations
+		icon = GFX_goal_generic_territory_or_war
+		x = 6
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_final_day_of_little_entante }
+		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Treaty with Lithuania
+	focus = {
+		id = ROM_treaty_with_lithuania
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_sign_the_pact_with_poland }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sign the Pact with Estonia
+	focus = {
+		id = ROM_sign_the_pact_with_estonia
+		icon = GFX_goal_tripartite_pact
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_treaty_with_lithuania }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sign the Pact with Latvia
+	focus = {
+		id = ROM_sign_the_pact_with_latvia
+		icon = GFX_goal_generic_major_alliance
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_treaty_with_lithuania }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Communism Way
+	focus = {
+		id = ROM_the_communism_way
+		icon = GFX_goal_support_communism
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_left_wing }
+		mutually_exclusive = { focus = ROM_the_democratic_way }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Make the Entante Stronger
+	focus = {
+		id = ROM_make_the_entante_stronger
+		icon = GFX_focus_usa_union_representation_act
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_preserve_little_entante }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invoke Treatry Clause
+	focus = {
+		id = ROM_invoke_treatry_clause
+		icon = GFX_goal_generic_wolf_pack
+		x = 8
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_preserve_little_entante }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invite France in Entante
+	focus = {
+		id = ROM_invite_france_in_entante
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 10
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_make_the_entante_stronger }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invite United Kingdom in Entante
+	focus = {
+		id = ROM_invite_united_kingdom_in_entante
+		icon = GFX_focus_eng_unite_the_anglosphere
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_invite_france_in_entante }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Force Soviet Union to Desarm the Arm
+	focus = {
+		id = ROM_force_soviet_union_to_desarm_the_arm
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_preserve_little_entante }
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Future of Romania
+	focus = {
+		id = ROM_the_future_of_romania
+		icon = GFX_focus_invite_romania
+		x = 24
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The way of Nationalism
+	focus = {
+		id = ROM_the_way_of_nationalism
+		icon = GFX_goal_support_fascism
+		x = 32
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_right_wing }
+		mutually_exclusive = { focus = ROM_the_hohenzolern_house }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Democratic Way
+	focus = {
+		id = ROM_the_democratic_way
+		icon = GFX_goal_support_democracy
+		x = 22
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_left_wing }
+		mutually_exclusive = { focus = ROM_the_communism_way }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Hohenzolern House
+	focus = {
+		id = ROM_the_hohenzolern_house
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 26
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_right_wing }
+		mutually_exclusive = { focus = ROM_the_way_of_nationalism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Start the Propaganda
+	focus = {
+		id = ROM_start_the_propaganda
+		icon = GFX_goal_generic_propaganda
+		x = 32
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_way_of_nationalism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Right Wing
+	focus = {
+		id = ROM_the_right_wing
+		icon = GFX_goal_support_fascism
+		x = 26
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_future_of_romania }
+		mutually_exclusive = { focus = ROM_the_left_wing }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The left Wing
+	focus = {
+		id = ROM_the_left_wing
+		icon = GFX_goal_support_communism
+		x = 22
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_future_of_romania }
+		mutually_exclusive = { focus = ROM_the_right_wing }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for FieldMarshal Ion Antonescu
+	focus = {
+		id = ROM_fieldmarshal_ion_antonescu
+		icon = GFX_ROM_fieldmarshal_ion_antonescu-50812
+		x = 30
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_start_the_propaganda }
+		mutually_exclusive = { focus = ROM_zelea_codreanu }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Zelea Codreanu
+	focus = {
+		id = ROM_zelea_codreanu
+		icon = GFX_ROM_zelea_codreanu-37442
+		x = 34
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_start_the_propaganda }
+		mutually_exclusive = { focus = ROM_fieldmarshal_ion_antonescu }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Empower the King
+	focus = {
+		id = ROM_empower_the_king
+		icon = GFX_focus_rom_handle_king
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_hohenzolern_house }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Carol II
+	focus = {
+		id = ROM_carol_ii
+		icon = GFX_ROM_carol_ii-50827
+		x = 25
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_empower_the_king }
+		mutually_exclusive = { focus = ROM_mihai_i }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Hold the Elections
+	focus = {
+		id = ROM_hold_the_elections
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 22
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_democratic_way }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Inprison Codreanu
+	focus = {
+		id = ROM_inprison_codreanu
+		icon = GFX_focus_spa_eliminate_the_carlists
+		x = 29
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_seize_the_power }
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Inprove the land tactics
+	focus = {
+		id = ROM_inprove_the_land_tactics
+		icon = GFX_goal_generic_army_doctrines
+		x = 26
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_romanian_army_reform }
+		mutually_exclusive = { focus = ROM_mobil_tactics_inprovement }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mobil tactics inprovement!
+	focus = {
+		id = ROM_mobil_tactics_inprovement
+		icon = GFX_goal_generic_army_motorized
+		x = 28
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_romanian_army_reform }
+		mutually_exclusive = { focus = ROM_inprove_the_land_tactics }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Miners Division!
+	focus = {
+		id = ROM_the_miners_division
+		icon = GFX_goal_generic_scientific_exchange
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_industrial_reboot }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Workers Hegemony
+	focus = {
+		id = ROM_the_workers_hegemony
+		icon = GFX_focus_generic_join_comintern
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_seize_the_lands }
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Finish the Agrarian reform!
+	focus = {
+		id = ROM_finish_the_agrarian_reform
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 12
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_beggin_the_agrarian_reform }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Revoke Church Lands
+	focus = {
+		id = ROM_revoke_church_lands
+		icon = GFX_goal_continuous_suppression
+		x = 19
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_ban_the_church }
+		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Force Labor!
+	focus = {
+		id = ROM_force_labor
+		icon = GFX_focus_CZE_german_puppet
+		x = 18
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_revoke_church_lands }
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Inprison the Priests!
+	focus = {
+		id = ROM_inprison_the_priests
+		icon = GFX_focus_por_workers_of_iberia
+		x = 20
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_revoke_church_lands }
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Socialist Revolution Has Begun!
+	focus = {
+		id = ROM_the_socialist_revolution_has_begun
+		icon = GFX_goal_support_fourth_int
+		x = 16
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ROM_finish_the_agrarian_reform 
+		}
+		prerequisite = { 
+			focus = ROM_the_miners_division 
+		}
+		prerequisite = { 
+			focus = ROM_force_labor 
+		}
+		prerequisite = { 
+			focus = ROM_inprison_the_priests 
+		}
+		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Armament Industy
+	focus = {
+		id = ROM_the_armament_industy
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 39
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_industrial_reborn }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Infrastructure Effort
+	focus = {
+		id = ROM_infrastructure_effort
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 43
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_industrial_reborn }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industrial Research Plan 1
+	focus = {
+		id = ROM_industrial_research_plan_1
+		icon = GFX_goal_generic_scientific_exchange
+		x = 40
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_the_armament_industy }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Infrastructure Plan Phase 2
+	focus = {
+		id = ROM_infrastructure_plan_phase_2
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 44
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_infrastructure_effort }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Infrastructure Research
+	focus = {
+		id = ROM_infrastructure_research
+		icon = GFX_goal_generic_construct_civilian
+		x = 43
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ROM_infrastructure_plan_phase_1 
+		}
+		prerequisite = { 
+			focus = ROM_infrastructure_plan_phase_2 
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Romanian Army Reform
+	focus = {
+		id = ROM_the_romanian_army_reform
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 27
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Demand Hungary!
+	focus = {
+		id = ROM_demand_hungary
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 45
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_balkan_domination }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for IAR Effort
+	focus = {
+		id = ROM_iar_effort
+		icon = GFX_goal_generic_air_fighter2
+		x = 12
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tactical Bombardament Efforts
+	focus = {
+		id = ROM_tactical_bombardament_efforts
+		icon = GFX_goal_generic_air_bomber
+		x = 14
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_bomber_designs }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Destoryers Effort
+	focus = {
+		id = ROM_destoryers_effort
+		icon = GFX_focus_generic_destroyer
+		x = 18
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_navy_reform }
+		mutually_exclusive = { focus = ROM_submarine_effort }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Submarine Detection Effort
+	focus = {
+		id = ROM_submarine_detection_effort
+		icon = GFX_goal_generic_navy_submarine
+		x = 18
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_destoryers_effort }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Powerfull Navy!
+	focus = {
+		id = ROM_a_powerfull_navy
+		icon = GFX_goal_generic_navy_battleship
+		x = 17
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ROM_mine_warfare_support 
+			focus = ROM_submarine_detection_effort 
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Balkan Domination!
+	focus = {
+		id = ROM_balkan_domination
+		icon = GFX_focus_rom_preserve_romania
+		x = 47
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = ROM_protector_of_balkans }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Guarante Independence to Bulgaria!
+	focus = {
+		id = ROM_guarante_independence_to_bulgaria
+		icon = GFX_goal_tripartite_pact
+		x = 41
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_protector_of_balkans }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Guarante Independence to Yugoslavia!
+	focus = {
+		id = ROM_guarante_independence_to_yugoslavia
+		icon = GFX_focus_invite_yugoslavia
+		x = 39
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_protector_of_balkans }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Navy Reform
+	focus = {
+		id = ROM_navy_reform
+		icon = GFX_goal_generic_navy_battleship
+		x = 17
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Submarine Effort
+	focus = {
+		id = ROM_submarine_effort
+		icon = GFX_goal_generic_navy_submarine
+		x = 16
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_navy_reform }
+		mutually_exclusive = { focus = ROM_destoryers_effort }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mine Warfare Support
+	focus = {
+		id = ROM_mine_warfare_support
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 16
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_submarine_effort }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Protector of Balkans!
+	focus = {
+		id = ROM_protector_of_balkans
+		icon = GFX_goal_anschluss
+		x = 40
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = ROM_balkan_domination }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Guarante Independence to Czehoslovakia!
+	focus = {
+		id = ROM_guarante_independence_to_czehoslovakia
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 38
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_guarante_independence_to_yugoslavia }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Non-Agressive Pact with Hungary
+	focus = {
+		id = ROM_nonagressive_pact_with_hungary
+		icon = GFX_focus_hun_assassinate_horthy
+		x = 40
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_protector_of_balkans }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Safe Balkans!
+	focus = {
+		id = ROM_safe_balkans
+		icon = GFX_goal_rhineland
+		x = 40
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ROM_guarante_independence_to_czehoslovakia 
+		}
+		prerequisite = { 
+			focus = ROM_guarante_independence_to_grece 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ultimatum to Bulgaria!
+	focus = {
+		id = ROM_ultimatum_to_bulgaria
+		icon = GFX_goal_generic_forceful_treaty
+		x = 49
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_balkan_domination }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ultimatum to Czechoslovakia
+	focus = {
+		id = ROM_ultimatum_to_czechoslovakia
+		icon = GFX_focus_CZE_german_puppet
+		x = 46
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_demand_hungary }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ottoman Revange
+	focus = {
+		id = ROM_ottoman_revange
+		icon = GFX_focus_generic_support_the_left_right
+		x = 47
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ROM_balkan_domination }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

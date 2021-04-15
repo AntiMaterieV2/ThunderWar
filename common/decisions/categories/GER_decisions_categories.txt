@@ -1,0 +1,12 @@
+ger_national_civilian_war = {
+	icon = decision_generic_ignite_civil_war
+	picture = GFX_german_emplem
+	priority = 11
+	allowed = {
+	}
+	visibile = {
+		original_tag = GER
+		original_tag = GEM
+		original_tag = GDR
+	}
+}

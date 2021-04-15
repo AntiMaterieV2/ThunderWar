@@ -1,0 +1,75 @@
+focus_tree = {
+	id = 1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	focus = {
+		id = GER_Great_Uprising
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 5
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_Civilian_In_Arms
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 5
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {focus = GER_Great_Uprising}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_Rise_Old_Army
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {focus = GER_Civilian_In_Arms}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_Rise_Weapons
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 6
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {focus = GER_Civilian_In_Arms}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = GER_Destory_The_Traitors
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {focus = GER_Civilian_In_Arms}
+		prerequisite = {focus = GER_Rise_Weapons}
+		prerequisite = {focus = GER_Rise_Old_Army}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
