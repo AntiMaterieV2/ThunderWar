@@ -1,0 +1,10 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_idea_civil_war"
+		texturefile = "gfx/interface/goals/german_cross.dds"
+	}
+	SpriteType = {
+		name = "GFX_german_emplem"
+		texturefile = "gfx/interface/decisions/GFX_german_emplem.dds"
+	}
+}

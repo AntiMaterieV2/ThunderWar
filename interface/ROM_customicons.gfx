@@ -1,0 +1,193 @@
+spriteTypes = { 
+	##Icon For: Execute the Finale Solution in Romania!
+	SpriteType = { 
+		name = "GFX_ROM_execute_the_finale_solution_in_romania-28236"
+		texturefile = "gfx/interface/goals/GFX_ROM_execute_the_finale_solution_in_romania-28236.dds"
+	}
+
+	##Icon Shine For: Execute the Finale Solution in Romania!
+	SpriteType = { 
+		name = "GFX_ROM_execute_the_finale_solution_in_romania-28236_shine"
+		texturefile = "gfx/interface/goals/GFX_ROM_execute_the_finale_solution_in_romania-28236.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ROM_execute_the_finale_solution_in_romania-28236.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ROM_execute_the_finale_solution_in_romania-28236.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Capture Ion Antonescu!
+	SpriteType = { 
+		name = "GFX_ROM_capture_ion_antonescu-50812"
+		texturefile = "gfx/interface/goals/GFX_ROM_capture_ion_antonescu-50812.dds"
+	}
+
+	##Icon Shine For: Capture Ion Antonescu!
+	SpriteType = { 
+		name = "GFX_ROM_capture_ion_antonescu-50812_shine"
+		texturefile = "gfx/interface/goals/GFX_ROM_capture_ion_antonescu-50812.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ROM_capture_ion_antonescu-50812.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ROM_capture_ion_antonescu-50812.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: FieldMarshal Ion Antonescu
+	SpriteType = { 
+		name = "GFX_ROM_fieldmarshal_ion_antonescu-50812"
+		texturefile = "gfx/interface/goals/GFX_ROM_fieldmarshal_ion_antonescu-50812.dds"
+	}
+
+	##Icon Shine For: FieldMarshal Ion Antonescu
+	SpriteType = { 
+		name = "GFX_ROM_fieldmarshal_ion_antonescu-50812_shine"
+		texturefile = "gfx/interface/goals/GFX_ROM_fieldmarshal_ion_antonescu-50812.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ROM_fieldmarshal_ion_antonescu-50812.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ROM_fieldmarshal_ion_antonescu-50812.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Zelea Codreanu
+	SpriteType = { 
+		name = "GFX_ROM_zelea_codreanu-37442"
+		texturefile = "gfx/interface/goals/GFX_ROM_zelea_codreanu-37442.dds"
+	}
+
+	##Icon Shine For: Zelea Codreanu
+	SpriteType = { 
+		name = "GFX_ROM_zelea_codreanu-37442_shine"
+		texturefile = "gfx/interface/goals/GFX_ROM_zelea_codreanu-37442.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ROM_zelea_codreanu-37442.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ROM_zelea_codreanu-37442.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Carol II
+	SpriteType = { 
+		name = "GFX_ROM_carol_ii-50827"
+		texturefile = "gfx/interface/goals/GFX_ROM_carol_ii-50827.dds"
+	}
+
+	##Icon Shine For: Carol II
+	SpriteType = { 
+		name = "GFX_ROM_carol_ii-50827_shine"
+		texturefile = "gfx/interface/goals/GFX_ROM_carol_ii-50827.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ROM_carol_ii-50827.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_ROM_carol_ii-50827.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }

@@ -1,0 +1,6 @@
+spriteTypes = { 
+	SpriteType = { 
+		name = "GFX_ger_civilian_war"
+		texturefile = "gfx/interface/goals/GFX_ger_civilian_war.dds"
+	}
+}
